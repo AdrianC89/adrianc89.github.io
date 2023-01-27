@@ -1,0 +1,102 @@
+* {
+    margin:0;
+    padding:0;
+    background-color: rgb(208, 232, 253);
+    font-family: 'Roboto', sans-serif;
+    }
+
+
+
+#encabezado h2{
+    
+    text-align: center;
+    
+}
+
+.presentacion{width: 800px; height: 210px; margin: 0 auto;
+}
+
+
+#foto img{
+
+height: 200px;
+width: 200px;
+background-repeat: no-repeat;
+background-position: 50%;
+border-radius: 50%;
+background-size: 100% auto;
+position: absolute;
+;
+
+}
+
+#introduccion{
+    width: 550px;
+    position: relative;
+    float: right;
+}
+
+#introduccion h1{
+    text-align: center;
+}
+
+#introduccion p{
+    padding-top: 15px;
+    padding-right: 30px;
+    font-size: 18px;
+    
+}
+
+.contenido{width: 800px; margin: 0 auto; 
+}
+
+.datos{
+    width: 266px;
+    display: table-cell;
+    padding: 10px;
+    
+
+}
+.datos:nth-child(1) button{
+    
+    background-color: rgb(93, 146, 192);
+    color: black;
+}
+    
+
+.datos:nth-child(2) button{
+    background-color: rgb(93, 192, 162);
+    color:black;
+}
+
+.datos:nth-child(3) button{
+    background-color: rgb(166, 192, 93);
+    color: black;
+    
+}
+.datos button{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    border:none;
+    border-radius: 20px 0px;
+    padding: 10px 40px 10px 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.datos button:hover{
+    background-color: rgb(166, 224, 224);
+
+} 
+
+.datos img{
+    filter: brightness(2.1);
+    mix-blend-mode: multiply;
+}
+
+#subseccion1, #subseccion2, #subseccion3{
+    padding: 15px;
+    
+    display: none;
+
+}
