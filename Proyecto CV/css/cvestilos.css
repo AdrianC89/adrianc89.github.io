@@ -1,7 +1,7 @@
 * {
     margin:0;
     padding:0;
-    background-color: rgb(208, 232, 253);
+    background-color: rgb(222, 236, 248);
     font-family: 'Roboto', sans-serif;
     }
 
@@ -10,6 +10,7 @@
 #encabezado h2{
     
     text-align: center;
+    background-image: linear-gradient(to top,rgb(170, 197, 221),rgb(228, 238, 247)) ;
     
 }
 
@@ -57,35 +58,39 @@ position: absolute;
     
 
 }
-.datos:nth-child(1) button{
+#btninfo1{
     
-    background-color: rgb(93, 146, 192);
-    color: black;
+    background-image: linear-gradient(to left, rgb(93, 146, 192), rgb(142, 183, 219),rgb(93, 146, 192));
 }
     
 
-.datos:nth-child(2) button{
-    background-color: rgb(93, 192, 162);
-    color:black;
+#btninfo2{
+
+    background-image: linear-gradient(to left, rgb(93, 192, 162),rgb(158, 224, 204), rgb(93, 192, 162));   
 }
 
-.datos:nth-child(3) button{
-    background-color: rgb(166, 192, 93);
-    color: black;
+#btninfo3{
     
+    background-image: linear-gradient(to left, rgb(166, 192, 94), rgb(206, 224, 175), rgb(166, 192, 94));    
 }
+
 .datos button{
+    border: 3px solid rgba(100, 100, 100,0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 260px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
     font-size: 18px;
-    border:none;
     border-radius: 20px 0px;
-    padding: 10px 40px 10px 10px;
     text-align: center;
     cursor: pointer;
+    background-size: 300%;
+    transition: 0.6s;
 }
 
 .datos button:hover{
-    background-color: rgb(166, 224, 224);
+    background-position: right;
 
 } 
 
@@ -95,8 +100,9 @@ position: absolute;
 }
 
 #subseccion1, #subseccion2, #subseccion3{
+    border: 2px solid rgba(100, 100, 100, 0.1);
+    border-radius: 8px;
     padding: 15px;
-    
     display: none;
 
 }
