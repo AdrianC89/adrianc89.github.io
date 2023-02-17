@@ -13,6 +13,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/cvestilos.css" />
+    <link rel="stylesheet" href="css/botones.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -40,14 +41,13 @@
         <div class="contenido">
             <div class="datos">
             <button id="btninfo1" onclick="fijar(1)" ><img src="imagenes/iconopers.png" height ="30" />
-            Datos Personales</button>
+            SOBRE MI</button>
             <ul>
                 <div id="subseccion1">
                 <p><b>Nacionalidad:</b> Argentino</p>
+                <p><b>Ciudad:</b> Tandil, Buenos Aires</p>
                 <p><b>Fecha de Nacimiento:</b> 13/10/1989</p>
                 <p><b>Estado Civil:</b> Soltero</p>
-                <p><b>Ciudad de Residencia:</b> Tandil, Buenos Aires</p>
-                <p><b>e-mail:</b><a href="mailto:adriancoroneltandil@gmail.com?Subject=Interesado%20en%20el%20curso"> adriancoroneltandil@gmail.com</a></p>
                 <p><b>Celular:</b> +54 249 4377909</p>
                 </div>
 
@@ -56,7 +56,7 @@
 
             <div class="datos">
             <button id="btninfo2" onclick="fijar(2)" ><img src="imagenes/iconoexp.png" height ="30"/>
-            Experiencias</button>
+            EXPERIENCIA</button>
             <ul>
                 <div id="subseccion2">
                 <p><b>Atención al público</b></p>
@@ -74,7 +74,7 @@
 
             <div class="datos">
             <button id="btninfo3" onclick="fijar(3)" ><img src="imagenes/iconohab.png" height ="30"/>
-            Habilidades</button>
+            APTITUDES</button>
             <ul>
                 <div id="subseccion3">
                 
@@ -87,9 +87,74 @@
                 
                 </div>
 
-            </ul>
+            </ul></div>
+
+            <div class="contenido2">
+            <div class="formacion">
+                <button id="btninfo4" onclick="fijar(4)" ><img src="imagenes/iconoform.png" height ="30"/>
+                    FORMACIÓN</button>
+                 <div id="subseccion4">
+                    <p>Actualmente formandome en el ISFD 166 en</p>
+                    <p><b>Tecnicatura de Análisis, Desarrollo y Programación de Aplicaciones</b>, 1° Año</p>
+                    <br>
+                    <div class="botones">
+                        <button class="botonuno" onmouseover="ver(1)" onmouseout="ocultar(1)"><span>Python</span></button>
+                        <div id="lenguaje1">
+                            <center><img src="imagenes/iconopython.png" height="50" /></center>
+                            Formandome de manera autodidacta, nivel básico.<br>
+                            Contrucción de funciones simples.<br>
+                            Actualmente realizando un proyecto para el Instituto ISFD 166
+                        </div>
+                        <button class="botondos" onmouseover="ver(2)" onmouseout="ocultar(2)"><span>Html5, css y js</span></button>
+                        <div id="lenguaje2">
+                            <center><img src="imagenes/iconohtmlcssjs.png" height="50" /></center>
+                            Nivel básico.<br>
+                            Actualmente desarrollando un proyecto de Frontend para la academia Ticmas.<br>
+                            Formación introductoria de Javascript en el curso #SeProgramar 4.0.<br>
+                            También formandome de manera autodidacta.
+
+                            
+                        </div>
+                        <button class="botontres" onmouseover="ver(3)" onmouseout="ocultar(3)"><span>Ruby</span></button>
+                        <div id="lenguaje3">
+                            <center><img src="imagenes/iconoruby.png" height="50" /></center>
+                            Formación introductoria en programación de objetos, Realizado en
+                            el curso #SeProgramar 4.0.
+                        </div>
+
+                    </div>
+                    </div>
+                    
+
+                
+                </div>
+        
+            <div class="contacto">
+            <button id="btninfo5" onclick="fijar(5)" ><img src="imagenes/iconomail.png" height ="30"/>
+                CONTACTO</button>
+            <form action="https://formsubmit.co/adriancoroneltandil@gmail.com" method="POST" id="subseccion5">
+            
+            <input type="text" name="nombreapellido" id="nombreapellido" class="input-padron" placeholder="Nombre / Empresa" required>
+
+            <br>
+            <input type="email" name="email" id="email" placeholder="Email@dominio.com" class="input-padron" required>
+
+            <br>
+            <input type="tel" name="telefono" id="telefono" placeholder="(xx) xxxx xxxx" class="input-padron" required>
+
+            
+            <br>
+            <textarea  id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aqui" class="input-padron"></textarea>
+            <br>
+            <input type="submit" value="Enviar" id="enviar">
+        
+        
+            </form>
+            
+            </div>
             </div>
         </div>
+        
     </body>
     
 </body>
