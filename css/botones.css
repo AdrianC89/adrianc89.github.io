@@ -1,0 +1,96 @@
+
+.botonuno, .botondos, .botontres {
+    display: inline-flex;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background: rgb(0, 0, 0);
+    color:#fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    border:none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.botonuno span {
+    position: relative;
+    z-index: 2;
+    transition: 3s ease all;
+    
+}
+
+.botondos span {
+    position: relative;
+    z-index: 2;
+    transition: 3s ease all;
+    
+}
+
+.botontres span {
+    position: relative;
+    z-index: 2;
+    transition: 3s ease all;
+    
+}
+
+.botonuno::after {
+	content: "";
+	width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: calc(-100% - 40px);
+    border-bottom: 40px solid #1b86c4; 
+    border-right: 40px solid transparent;
+    transition: .4s ease-in-out all;
+    
+	
+}
+
+.botondos::after {
+	content: "";
+	width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: calc(-100% - 40px);
+    border-bottom: 40px solid #dbb81b; 
+    border-right: 40px solid transparent;
+    transition: .4s ease-in-out all;
+    
+	
+}
+
+.botontres::after {
+	content: "";
+	width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: calc(-100% - 40px);
+    border-bottom: 40px solid #da3810; 
+    border-right: 40px solid transparent;
+    transition: .4s ease-in-out all;
+    
+	
+}
+
+.botonuno:hover::after {
+    left:0;
+}
+
+.botondos:hover::after {
+    left:0;
+}
+
+.botontres:hover::after {
+    left:0;
+}
